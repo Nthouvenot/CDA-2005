@@ -26,7 +26,7 @@ public class exercice31 {
                     if(charAtPosition == charOccurency)
                     occurence++;
                 }
-                System.out.println("le caractére " + caractere + " est présent " + occurence + "fois");
+                System.out.println("le caractére " + caractere + " est présent " + occurence + " fois");
             }
         }
        else{

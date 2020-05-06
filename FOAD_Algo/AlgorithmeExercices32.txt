@@ -1,0 +1,9 @@
+chaine saisie, caractere
+entier i
+début
+ECRIRE "saisissez une chaine qui se termine par un point"
+LIRE chaine
+ECRIRE "saisissez le caractére a rechercher"
+LIRE caractere
+POUR i ALLANT_DE 0 A taille(chaine) PAR_PAS_DE 1
+

@@ -22,7 +22,8 @@ POUR i DE 0 A chaine length() FAIRE
 	i <-- i + 1
 	POUR i2 DE 0 A 25 FAIRE
 		i2 <-- i2 + 1
-		SI tableauLettreAlphabet[i2] == chaine charAt(i)
+		CARACTERE temporaireChaine = chaine charAt(i)
+		SI temporaireChaine == tableauLettreAlphabet[i2] 
 		ALORS
 			occurenceLettreAplphabet[i2] <-- occurenceLettreAplphabet[i2] + 1
 		FIN SI
@@ -30,6 +31,6 @@ POUR i DE 0 A chaine length() FAIRE
 FIN POUR
 ECRIRE "Nombre d'occurence de chaque lettre de l'alphabet présente dans la chaine saisie :"
 POUR i de 0 a 25 FAIRE
-	ECRIRE tableauLettreAlphabet[i] + " : " + occurenceLettreAlphabet[i] + "fois"
+	ECRIRE tableauLettreAlphabet[i] + " : " + occurenceLettreAlphabet[i] + " fois"
 FIN POUR
 FIN

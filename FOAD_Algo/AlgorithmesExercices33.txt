@@ -1,4 +1,4 @@
-ENTIER i, i2, occurenceLettreAplphabet[26]
+ENTIER i, i2, occurenceLettreAlphabet[26]
 CARACTERE tableauLettreAlphabet[26] <-- {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 't', 'u', 'v', 'w', 'x', 'y', 'z'}
 CHAINE chaine
 BOOLEEN ok
@@ -15,7 +15,7 @@ FAIRE TANT QUE ok == false
 	ALORS
 		ok <-- true
 	SINON
-		ECRIRE "La chaine saisie doit faire au minimum 120 caractére"
+		ECRIRE "La chaine saisie doit faire au minimum 120 caractéres"
 	FIN SI
 FIN TANT QUE
 POUR i DE 0 A chaine length() FAIRE
@@ -28,8 +28,8 @@ POUR i DE 0 A chaine length() FAIRE
 		FIN SI
 	FIN POUR
 FIN POUR
-ECRIRE "Nombre d'occurence de chaque lettre de l'alphabet psésente dans la chaine saisie :"
+ECRIRE "Nombre d'occurence de chaque lettre de l'alphabet présente dans la chaine saisie :"
 POUR i de 0 a 25 FAIRE
-	ECRIRE tableauLettreAlphabet[i] + " : " + occurenceLettreAplphabet[i] + "fois"
+	ECRIRE tableauLettreAlphabet[i] + " : " + occurenceLettreAlphabet[i] + "fois"
 FIN POUR
 FIN

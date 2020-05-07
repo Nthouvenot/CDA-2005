@@ -1,0 +1,11 @@
+ENTIER tableauEntier[], i, i2, tmpCase
+POUR i DE 0 a tableauEntier lenght()
+	i <-- i + 1
+	TANT QUE tableauEntier[i2] < tableauEntier lenght() && tableauEntier[i] > tableauEntier[i2]
+	i2 <-- i2 + 1
+	tmpCase <-- tableauEntier[i2];
+        tableauEntier[i2] <-- tableauEntier[i];
+        tableauEntier[i2] <--  tmpCase;
+	FIN TANT QUE
+FIN POUR
+	

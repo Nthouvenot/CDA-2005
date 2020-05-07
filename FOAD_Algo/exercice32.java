@@ -2,7 +2,7 @@ package crm.algorithme.exercices;
 
 import java.util.Scanner;
 
-public class exercice31 {
+public class exercice32 {
 
     public static void main(String[] args) {
 

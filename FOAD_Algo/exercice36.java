@@ -43,14 +43,16 @@ public class exercice36 {
                 essaisRestant--;
             }
             //On verifie si le mot de l'utilsateur est identique au mot a deviner
-            caractereOk = 0;
+            caractereOk = 1;
             for(int i=0; i < chaine.length(); i++) {
                 if(reponseUtilisateur[i] == chaine.charAt(i)) {
                     caractereOk++;
-                    //Si tout les caractéres sont identique le mot a été trouvé
-                    if(caractereOk == chaine.length()) {
-                        victoire = true;
-                    }
+                }
+                //Si tout les caractéres sont identique le mot a été trouvé
+                if(caractereOk == chaine.length()  && !victoire) {
+                    victoire = true;
+                    essaisRestant = 6 - essaisRestant;
+                    System.out.println("Vous avez trouvez en " + essaisRestant + " coup");
                 }
             }
         }

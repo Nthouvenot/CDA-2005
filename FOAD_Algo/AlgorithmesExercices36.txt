@@ -31,17 +31,19 @@ TANT QUE essaisRestant >= 0 && victoire == false
 	SI caractereTrouve == false
 		essaisRestant <--  essaisrestant - 1
 	FIN SI
+	caractereOk <-- 1
 	POUR i DE 0 A length(chaine)
 		i <-- i + 1
 		SI reponseUtilisateur == charAt(chaine, i)
 		ALORS
 		caractereOk <-- caractereOk + 1
-			SI caractereOk == lenght(chaine)
-			ALORS
-				victoire = true
-			FIN SI
 		FIN SI
 	FIN POUR
-		
+	SI caractereOk == lenght(chaine)  && victoire == false
+	ALORS
+		victoire = true
+		essaisRestant <-- 6 - essaisRestant
+		ECRIRE "Vous avez trouvez en " + essaisRestant + " coup"
+	FIN SI	
 FIN TANT QUE
 FIN

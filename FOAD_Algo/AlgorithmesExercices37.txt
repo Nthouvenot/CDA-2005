@@ -4,9 +4,10 @@ DEBUT
 middleName <-- 0
 compareResult <-- 0
 position <-- -1
+nameSearch = "chloé"
 middleName <-- ceil(length(name) / 2)
+hightIndex = length(name)
 TANT QUE position == -1 || i < lenght(name) - 1
-	
 	compareResult <-- compareTo(nameSearch, name[middleName])
 	SI  compareResult > 0
 	ALORS
